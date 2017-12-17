@@ -14,6 +14,12 @@ class YoukuSpider(scrapy.Spider):
         "http://i.youku.com/dapili",
     )
 
+    def __init__(self, args=None):
+
+        if args is not None:
+            scrapy_id = args
+
+
     def start_requests(self):
         reqs = []
         req = scrapy.Request("http://list.youku.com/albumlist/show/id_49412420.html")

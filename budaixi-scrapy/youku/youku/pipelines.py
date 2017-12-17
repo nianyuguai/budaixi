@@ -17,7 +17,7 @@ class YoukuPipeline(object):
         # cur.execute('SET NAMES utf8;')
         # cur.execute('SET CHARACTER SET utf8;')
         # cur.execute('SET CHARACTER_SET_CONNECTION=utf8;')
-        sql = ("insert into t_video (id, album_id, title, url, img_url) "
+        sql = ("replace into t_video (id, album_id, title, url, img_url) "
                "VALUES (%s, %s, %s, %s, %s)")
 
         list = (

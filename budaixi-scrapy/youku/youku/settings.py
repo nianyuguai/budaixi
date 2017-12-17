@@ -97,7 +97,9 @@ DB_CONFIG={
     'user':'root',
     'passwd':'',
     'host':'localhost',
+    'port':3306,
     'use_unicode':True,
     'charset':'utf8'
 }
 
+FLASK_DB_CONFIG='pymysql://root:@localhost:3306/spider'
